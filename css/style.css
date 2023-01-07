@@ -1,0 +1,43 @@
+/* Universal Style CSS */
+* {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Common Style CSS */
+
+/* Header Style Start  */
+
+/* nav style css */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  padding: 15px 0;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.menu ul li {
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+/* Banner Section Style CSS */
+.banner-section {
+  height: 100vh;
+  background: url(../images/background.jpg), rgba(255, 166, 0, 0.247);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
