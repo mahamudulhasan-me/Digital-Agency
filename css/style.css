@@ -1,6 +1,7 @@
 /* Universal Style CSS */
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -8,6 +9,11 @@
 .primary-clr {
   color: #ab3421;
 }
+h1,
+h2 {
+  font-weight: 700;
+}
+
 p {
   font-size: 18px;
 }
@@ -29,10 +35,6 @@ p {
   background-color: #ffffff;
   color: #ab3421;
 }
-main {
-  width: 80%;
-  margin: 0 auto;
-}
 /* Header Style Start  */
 
 /* nav style css */
@@ -42,6 +44,10 @@ nav {
   align-items: center;
   background-color: #000000;
   padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .menu ul {
   display: flex;
@@ -54,6 +60,22 @@ nav {
   font-size: 20px;
   font-weight: 500;
   padding: 8px;
+  position: relative;
+}
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ab3421;
+}
+.menu ul li a:hover:after {
+  width: 80%;
+  transition: 0.4s;
 }
 
 /* Banner Section Style CSS */
@@ -82,32 +104,73 @@ nav {
 .service-section {
   width: 100%;
   height: 100vh;
-  padding: 120px 0;
+  background: url(../images/footer-bg.png), hsla(0, 0%, 0%, 0.95);
+  padding: 120px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #ffffff;
+  background-blend-mode: overlay;
+  gap: 20px;
 }
 .service-info {
   width: 50%;
 }
 .service-info h1 {
   font-size: 45px;
+  margin-top: 15px;
 }
-.service-info p {
+.service-info > p {
   margin: 20px 0 30px;
 }
 .service-author {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .author-info {
-  padding: 10px 15px;
+  padding: 10px 24px 0 0;
   display: flex;
-  border-right: 1px solid #ab3421;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.author-info::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 60%;
+  width: 3px;
+  background-color: #ab3421;
 }
 .author-info img {
   border-radius: 50%;
   height: 120px;
-  margin-right: 20px;
+  margin: 30px 20px 0px 0px;
+}
+.service-info ul li {
+  font-size: 18px;
+}
+.service-container-main {
+  display: flex;
+  color: #000000;
+  gap: 20px;
+  justify-content: space-around;
+}
+.duel-service-container {
+  width: 50%;
+}
+.service-item {
+  background-color: #faebd7;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 15px;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.service-item img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
 }
