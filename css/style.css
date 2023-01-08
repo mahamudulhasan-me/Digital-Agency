@@ -103,9 +103,8 @@ nav {
 /* Service Style CSS  */
 .service-section {
   width: 100%;
-  height: 100vh;
   background: url(../images/footer-bg.png), hsla(0, 0%, 0%, 0.95);
-  padding: 120px 10%;
+  padding: 100px 10% 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,4 +172,37 @@ nav {
   width: 120px;
   height: 120px;
   margin-bottom: 15px;
+}
+
+/* Appoinment card style  */
+.appointment-card {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #ab3421;
+  padding: 30px 25px;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 25px;
+  position: relative;
+  bottom: 72px;
+}
+.mob-number {
+  width: 30%;
+  display: flex;
+  border-right: 3px solid #d19595;
+}
+.mob-number img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.mob-number p,
+h2 {
+  margin-right: 30px;
+}
+.appoint-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
 }
